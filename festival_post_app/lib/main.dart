@@ -1,3 +1,5 @@
+import 'package:festival_post_app/Utils/route_utils.dart';
+import 'package:festival_post_app/views/screens/Editor_Page.dart';
 import 'package:festival_post_app/views/screens/Home_Page.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +19,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: HomePage(),
+      routes: {
+        MyRoutes.HomePage: (context) => const HomePage(),
+        MyRoutes.PostEditor: (context) => const EditorPage(),
+      },
     );
   }
 }
