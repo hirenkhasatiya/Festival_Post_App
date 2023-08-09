@@ -1,33 +1,22 @@
-class Quote {
-  final String quote;
-  final String category;
+class Festival {
   final String image;
+  final String category;
+  final String Quote;
+  final List bgimage;
 
-  Quote({
+  Festival({
+    required this.Quote,
     required this.image,
-    required this.quote,
     required this.category,
+    required this.bgimage,
   });
 
-  factory Quote.fromMap({required Map data}) {
-    return Quote(
-      quote: data["quote"],
-      category: data["category"],
+  factory Festival.fromMap({required Map data}) {
+    return Festival(
+      Quote: data["Quote"],
       image: data["image"],
+      category: data["category"],
+      bgimage: data["bgimage"],
     );
   }
 }
-
-// class festival {
-//   final String image;
-//
-//   festival({
-//     required this.image,
-//   });
-//
-//   factory festival.fromMap({required Map data}) {
-//     return festival(
-//       image: data["image"],
-//     );
-//   }
-// }

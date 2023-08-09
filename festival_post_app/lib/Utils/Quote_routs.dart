@@ -1,228 +1,96 @@
-import '../Models/Quote_models.dart';
+import 'package:festival_post_app/Models/Quote_models.dart';
 
-List<Map> allQuotes = [
+List<Map> allFestival = [
   {
-    "quote":
-        "Burn your ego, expectations and ill thoughts in the fire of Holi. Wish you a very Happy Holi!",
     "category": "Holi",
+    "Quote":
+        "May this Holi bring the ultimate colours of happiness in you and Your Family.",
     "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg"
+        "https://thumbs.dreamstime.com/b/happy-holi-background-color-festival-india-celebration-greetings-illustration-abstract-colorful-110598351.jpg",
+    "bgimage": [
+      "https://wallpapercave.com/wp/wp2408580.jpg",
+      "http://www.pngmart.com/files/9/Holi-Color-Background-PNG-Pic.png",
+      "https://inspiritquote.com/wp-content/uploads/2020/02/Holi-Banner-Background.jpg"
+    ]
   },
   {
-    "quote":
-        "Forget all your pains and worries, get drenched in colors of this festival.Happy Holi!",
-    "category": "Holi",
-    "image":
-        "https://i.pinimg.com/564x/8d/0c/a8/8d0ca8811df7ef21c7ac8db7ba0f4b04.jpg",
-  },
-  {
-    "quote": "May God gift you all the colours of life this Holi. Happy Holi!",
-    "category": "Holi",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        " Let the colours of Holi spread the message of peace and happiness. Here's wishing you and your family a happy Holi!",
-    "category": "Holi",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Holi is a special time of year to remember those who are close to our hearts with splashing colours!",
-    "category": "Holi",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Holi is the time to unwind, de-stress and bond with sweets, thandai and colours. Happy Holi",
-    "category": "Holi",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Holi is the apt time to break the ice, renew relationships and link yourself with those that you wanted to with a bit of colour.",
-    "category": "Holi",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Holi is the day to express love with colours. It is a time to show affection. All the colours that are on you are of love.",
-    "category": "Holi",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "A true and caring relation doesn't have to speak loud, a soft message is just enough to express the heartiest feelings. Enjoy the festival of Holi with a lot of fun.",
-    "category": "Holi",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote": "Dipped in hues of love and trust has come the festival of Holi.",
-    "category": "Holi",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-//diwali
-  {
-    "quote":
-        "Doubt is like darkness; Trust is like light, There is no way to destroy light by throwing darkness into it. So come together and enjoy the festival of lights.",
     "category": "Diwali",
+    "Quote":
+        "Diyas are God’s way of telling you that there will always be light to qur darkness",
     "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
+        "https://www.greetingseveryday.com/wp-content/uploads/2016/10/Diwali-Deepavali-2016-Diya-HD-Pictures-Photos-1.jpg",
+    "bgimage": [
+      "https://3.bp.blogspot.com/_mfK7xvLSeDE/TM7wdvuUZZI/AAAAAAAAAvw/SgGFGNrr3OY/s1600/deepavali_wallpaper_diwali6.jpg",
+      "https://www.bhagwanbhajan.com/festivals/diwali/diwali-hd-wallpapers/happy-diwali.jpg",
+      "https://png.pngtree.com/back_origin_pic/03/99/48/bc5c496715ae7dd3662e662af127b755.jpg"
+    ]
   },
   {
-    "quote":
-        "With gleam of auspicious Diyas and the holy chants, may happiness and prosperity fill your life forever! Wishing You and Your Family very Happy and Prosperous Diwali!",
-    "category": "Diwali",
+    "category": "Christmas",
+    "Quote":
+        "Christmas is like candy; it slowly melts in your mouth sweetening every taste bud, making you wish it could last forever.",
     "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
+        "https://tse4.mm.bing.net/th?id=OIP.d-KNQ9PF0SnmyYbk8i4GMAHaGJ&pid=Api&P=0&h=180",
+    "bgimage": [
+      "https://tse3.mm.bing.net/th?id=OIP.d-alm-bzrAe39-vEDTF2NgHaFj&pid=Api&P=0&h=180",
+      "https://tse1.mm.bing.net/th?id=OIP.1RuAXbt2qkwdUjQtEcsL-gHaE7&pid=Api&P=0&h=180",
+      "https://tse1.mm.bing.net/th?id=OIP.0WKpR7gL3mHZIBM2rZA9kAHaE8&pid=Api&P=0&h=180"
+    ]
   },
   {
-    "quote":
-        "Shine like sparkles, glow like candles and burn all the negativity like crackles. Wish you all a very lovely and cheerful Diwali",
-    "category": "Diwali",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "As the “festival of lights,” Diwali conveys an important message that transcends religions: the necessity of doing good and bringing light to the world.",
-    "category": "Diwali",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "For this is a particular time when family and friends get together, for fun. Wishing amusement and enjoyment to cheer your days, in this Diwali festive season.",
-    "category": "Diwali",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Diwali also marks the beginning of the new year for many Hindus, and I hope you enjoy a healthy and peaceful festival of lights.",
-    "category": "Diwali",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Candles to enjoy life; Decorations to light life; Presents to share success; Fire Crackers to burn evils; Sweets to sweeten victory, And worship to thank god! Wish you a joyous and prosperous Diwali!",
-    "category": "Diwali",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Open your main entrance door and welcome Goddess Lakshmi wholeheartedly. I hope she will fulfil all your dreams. Wish you a very happy and wealthy Diwali.",
-    "category": "Diwali",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Open your main entrance door and welcome Goddess Lakshmi wholeheartedly. I hope she will fulfil all your dreams. Wish you a very happy and wealthy Diwali.",
-    "category": "Makar Sankranti",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Open your main entrance door and welcome Goddess Lakshmi wholeheartedly. I hope she will fulfil all your dreams. Wish you a very happy and wealthy Diwali.",
     "category": "Janmashtami",
+    "Quote":
+        "Lord Krishna was born at the midnight and that’s why every year devotees celebrate his arrival at the midnight.",
     "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
+        "https://wishingwish.com/wp-content/uploads/2021/08/janmashtami-8.jpg",
+    "bgimage": [
+      "https://static.vecteezy.com/system/resources/previews/002/491/922/large_2x/janmashtami-background-template-free-vector.jpg",
+      "https://media.istockphoto.com/vectors/happy-janmashtami-wallpaper-background-vector-id487241974?k=6&m=487241974&s=170667a&w=0&h=9emLjyxC-hEp7J5UWpyCiiy9ZfiVSM7iGz5lzvbOGq4=",
+      "https://image.freepik.com/free-vector/happy-janmashtami-festival-background-with-flute_1055-7121.jpg"
+    ]
   },
   {
-    "quote":
-        "Open your main entrance door and welcome Goddess Lakshmi wholeheartedly. I hope she will fulfil all your dreams. Wish you a very happy and wealthy Diwali.",
-    "category": "New Year",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Open your main entrance door and welcome Goddess Lakshmi wholeheartedly. I hope she will fulfil all your dreams. Wish you a very happy and wealthy Diwali.",
-    "category": "Republic Day",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Open your main entrance door and welcome Goddess Lakshmi wholeheartedly. I hope she will fulfil all your dreams. Wish you a very happy and wealthy Diwali.",
-    "category": "Shivratri",
-    "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-  },
-  {
-    "quote":
-        "Open your main entrance door and welcome Goddess Lakshmi wholeheartedly. I hope she will fulfil all your dreams. Wish you a very happy and wealthy Diwali.",
     "category": "Raksha Bandhan",
+    "Quote":
+        "Sometimes, all we need is someone to be there for us. Not to fix anything, or to do anything in particular, but just to let us know that we’re cared about. Thank you for being that person for me, sister. Happy Raksha Bandhan!",
     "image":
-        "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
+        "https://tse2.mm.bing.net/th?id=OIP.O-tITKMkjB3AHgnFwJT6RwHaHa&pid=Api&P=0&h=180",
+    "bgimage": [
+      "https://tse3.mm.bing.net/th?id=OIP.0hDn9HocAn1UdAVkygBa7QHaEK&pid=Api&P=0&h=180",
+      "https://png.pngtree.com/thumb_back/fw800/background/20190813/pngtree-india-raksha-bandhan-day-background-design-image_298702.jpg",
+      "https://image.freepik.com/free-vector/happy-raksha-bandhan-background_1035-3387.jpg"
+    ]
+  },
+  {
+    "category": "Republic Day",
+    "Quote":
+        "Babasaheb Bhimrao Ambedkar, referred to as the father of the Constitution of India, drafted the Constitution, which is the supreme law of India.",
+    "image":
+        "https://tse1.mm.bing.net/th?id=OIP.TzTcq8nvlZ4cBpE6WVzfXgHaHa&pid=Api&P=0&h=180",
+    "bgimage": [
+      "https://tse2.mm.bing.net/th?id=OIP.BHV3cARpSVDLWem6mhaCAQHaEo&pid=Api&P=0&h=180",
+      "http://3.bp.blogspot.com/-yoyHKRuxPOQ/UQO2nxmnJvI/AAAAAAAAfdI/Y5uuaMqn8ew/s1600/Republic+Day+5.jpg",
+      "https://tse2.mm.bing.net/th?id=OIP.vpsJzZZalsZWUc7jdLyqBgHaEK&pid=Api&P=0&h=180"
+    ]
+  },
+  {
+    "category": "Independent day",
+    "Quote":
+        "This Independence Day let’s take a pledge to protect the peace and unity of our great nation. Happy Independence Day!",
+    "image":
+        "https://tse3.mm.bing.net/th?id=OIP.W05nn8jWaTeEx009uY9n7wHaHa&pid=Api&P=0&h=180",
+    "bgimage": [
+      "https://tse3.mm.bing.net/th?id=OIP.uN1hoQc6wshB46XQworQewHaFj&pid=Api&P=0&h=180",
+      "https://tse4.mm.bing.net/th?id=OIP.3r1Vu35ql0eNeQLtfGSm7QHaEK&pid=Api&P=0&h=180",
+      "https://tse4.mm.bing.net/th?id=OIP.Z4pa_HgyXgdYUmkDgvCc_QHaFR&pid=Api&P=0&h=180"
+    ]
   },
 ];
 
-List<Quote> AllFestival = allQuotes
+List<Festival> festivalData = allFestival
     .map(
-      (e) => Quote.fromMap(data: e),
+      (e) => Festival.fromMap(
+        data: e,
+      ),
     )
     .toList();
-
-List Festival = AllFestival.map((e) => e.category).toSet().toList();
-
-// List<Map> allfestival = [
-//   {
-//     "image":
-//         "https://i.pinimg.com/564x/62/51/89/6251899fe18136b933f8dae4760c8dce.jpg",
-//   },
-//   {
-//     "image":
-//         "https://i.pinimg.com/564x/8d/0c/a8/8d0ca8811df7ef21c7ac8db7ba0f4b04.jpg",
-//   },
-//   {
-//     "image":
-//         "https://i.pinimg.com/564x/8d/0c/a8/8d0ca8811df7ef21c7ac8db7ba0f4b04.jpg",
-//   },
-//   {
-//     "image":
-//         "https://i.pinimg.com/564x/8d/0c/a8/8d0ca8811df7ef21c7ac8db7ba0f4b04.jpg",
-//   },
-//   {
-//     "image":
-//         "https://i.pinimg.com/564x/8d/0c/a8/8d0ca8811df7ef21c7ac8db7ba0f4b04.jpg",
-//   },
-//   {
-//     "image":
-//         "https://i.pinimg.com/564x/8d/0c/a8/8d0ca8811df7ef21c7ac8db7ba0f4b04.jpg",
-//   },
-//   {
-//     "image":
-//         "https://i.pinimg.com/564x/8d/0c/a8/8d0ca8811df7ef21c7ac8db7ba0f4b04.jpg",
-//   },
-//   {
-//     "image":
-//         "https://i.pinimg.com/564x/8d/0c/a8/8d0ca8811df7ef21c7ac8db7ba0f4b04.jpg",
-//   },
-//   {
-//     "image":
-//         "https://i.pinimg.com/564x/8d/0c/a8/8d0ca8811df7ef21c7ac8db7ba0f4b04.jpg",
-//   },
-//   {
-//     "image":
-//         "https://i.pinimg.com/564x/8d/0c/a8/8d0ca8811df7ef21c7ac8db7ba0f4b04.jpg",
-//   },
-// ];
-//
-// List<festival> allFestival = allfestival
-//     .map(
-//       (e) => festival.fromMap(data: e),
-//     )
-//     .toList();

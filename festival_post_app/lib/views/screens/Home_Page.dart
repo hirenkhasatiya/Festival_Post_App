@@ -1,6 +1,3 @@
-import 'dart:math';
-
-import 'package:festival_post_app/Models/Quote_models.dart';
 import 'package:festival_post_app/Utils/Color_utils.dart';
 import 'package:festival_post_app/Utils/Quote_routs.dart';
 import 'package:festival_post_app/Utils/route_utils.dart';
@@ -24,36 +21,30 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Padding(
         padding: EdgeInsets.all(10),
-        child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(
-            children: List.generate(
-                Festival.length,
-                (index) => GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          Navigator.of(context).pushNamed(MyRoutes.PostEditor,
-                              arguments: Festival[index]);
-                        });
-                      },
-                      child: Container(
-                        height: 50,
-                        width: double.infinity,
-                        margin: const EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                          color: Mybg,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        padding: const EdgeInsets.all(10),
-                        child: Center(
-                          child: Text(
-                            Festival[index],
-                            style: const TextStyle(
-                                fontSize: 16, color: Colors.white),
-                          ),
-                        ),
-                      ),
-                    )).toList(),
+        child: GridView(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            mainAxisSpacing: 50,
+            crossAxisSpacing: 10,
+            childAspectRatio: 2 / 2,
+          ),
+          children: List.generate(
+            festivalData.length,
+            (index) => GestureDetector(
+              onTap: () {
+                setState(() {
+                  Navigator.of(context).pushNamed(MyRoutes.PostEditor,
+                      arguments: festivalData[index]);
+                });
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: NetworkImage("${festivalData[index].image}"),
+                      fit: BoxFit.cover),
+                ),
+              ),
+            ),
           ),
         ),
       ),
